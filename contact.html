@@ -17,25 +17,26 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script>
-          document.addEventListener('DOMContentLoaded', function () {
-            var form = document.getElementById('contactForm');
-            var submitButton = document.getElementById('submitButton');
-        
-            form.addEventListener('input', function () {
-              if (form.checkValidity()) {
-                submitButton.removeAttribute('disabled');
-              } else {
-                submitButton.setAttribute('disabled', true);
-              }
-            });
-        
-            form.addEventListener('submit', function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-              }
-            });
-          });
-        </script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('contactForm');
+    var submitButton = document.getElementById('submitButton');
+
+    form.addEventListener('input', function () {
+      if (form.checkValidity()) {
+        submitButton.removeAttribute('disabled');
+      } else {
+        submitButton.setAttribute('disabled', true);
+      }
+    });
+
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+      }
+    });
+  });
+</script>
+
 
     </head>
     <body class="d-flex flex-column">
